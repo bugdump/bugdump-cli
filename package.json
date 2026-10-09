@@ -1,6 +1,6 @@
 {
   "name": "@bugdump/cli",
-  "version": "0.0.1",
+  "version": "0.0.44",
   "description": "Official Bugdump CLI - Upload source maps so captured errors show your original code",
   "type": "module",
   "bin": {
