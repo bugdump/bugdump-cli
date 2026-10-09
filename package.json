@@ -1,0 +1,52 @@
+{
+  "name": "@bugdump/cli",
+  "version": "0.0.1",
+  "description": "Official Bugdump CLI - Upload source maps so captured errors show your original code",
+  "type": "module",
+  "bin": {
+    "bugdump": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit && eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "bugdump",
+    "cli",
+    "source-maps",
+    "sourcemaps",
+    "error-tracking"
+  ],
+  "author": "Bugdump",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bugdump/bugdump-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/bugdump/bugdump-cli/issues"
+  },
+  "homepage": "https://bugdump.com",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
